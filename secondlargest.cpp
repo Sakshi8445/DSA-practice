@@ -21,11 +21,12 @@
 // }
 
 #include<iostream>
+#include<climits>
 using namespace std;
 int main(){
     int arr[]={34,22,52,65,38};
     int largest=arr[0];
-    int secondLargest=arr[0];
+   int secondLargest = INT_MIN;   // INT_MIN means "the smallest possible integer"
     for(int i=0;i<5;i++){
         if(arr[i]>largest){
             secondLargest=largest;
